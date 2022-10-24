@@ -20,6 +20,8 @@ senai
 Ao entrar no sistema podemos alterar o usuário abrindo o menu e selecionando Alterar usuário.
 Nesta versão foi implementado o botão inserir da tela de cadastro de tipos de aeronave.
 
+Foi implementado o botão inserir na tela de cadastro de tipos de aeronaves.
+
 No repositório tem o conector Java que utilizei para esse projeto.
 
 Esta é a versão 1.0 do sistema.
