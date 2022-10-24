@@ -1,0 +1,31 @@
+package br.com.voeairlines.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TipoAeronaveDTO {
+
+	// atributo
+	private int id;
+	private String descricao;
+	List<AeronaveDTO> aeronave = new ArrayList<>();
+	
+
+	// get e set
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+}

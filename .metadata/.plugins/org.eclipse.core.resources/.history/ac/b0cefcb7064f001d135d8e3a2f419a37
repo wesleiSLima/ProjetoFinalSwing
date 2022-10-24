@@ -1,0 +1,40 @@
+package br.com.voeairlines.model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.swing.JOptionPane;
+
+import br.com.voeairlines.conexao.Conexao;
+
+public class AeronaveDAO {
+	
+	public void inserirAeronave(int id, int idTipo, String fabricante, String modelo, String codigo, TipoAeronaveDTO tipo) {
+		try {
+			Connection conn = Conexao.criar_conexao();
+
+			String sql = "insert into tbaeroplane(id,idtipo,manufactory,modelaeroplane,code) values (?,?,?,?,?)";
+			PreparedStatement ps = conn.prepareStatement(sql);
+
+			ps.setInt(1, id);
+			ps.setInt(2, idTipo);
+			ps.setString(3, fabricante);
+			ps.setString(4, modelo);
+			ps.setString(5, codigo);
+
+			ps.execute();
+
+			ps.close();
+			conn.close();
+
+			JOptionPane.showMessageDialog(null, descricao + " Foi inserido com sucesso !");
+
+		} catch (SQLException ex) {
+
+			ex.printStackTrace();
+		}
+	}
+
+}
+

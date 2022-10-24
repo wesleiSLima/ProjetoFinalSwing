@@ -1,0 +1,82 @@
+package br.com.voeairlines.model;
+
+public class AeronaveDTO {
+
+	// atributos
+	private int id;
+	private int idTipo;
+	private String fabricante;
+	private String modelo;
+	private String codigo;
+	private TipoAeronaveDTO tipo;
+
+	// contrutores
+	public AeronaveDTO() {
+	}
+
+	public AeronaveDTO(int id, int idTipo, String fabricante, String modelo, String codigo, TipoAeronaveDTO tipo) {
+		super();
+		this.id = id;
+		this.idTipo = idTipo;
+		this.fabricante = fabricante;
+		this.modelo = modelo;
+		this.codigo = codigo;
+		this.tipo = tipo;
+	}
+	
+	// get e set
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getIdTipo() {
+		return idTipo;
+	}
+
+	public void setIdTipo(int idTipo) {
+		this.idTipo = idTipo;
+	}
+
+	public String getFabricante() {
+		return fabricante;
+	}
+
+	public void setFabricante(String fabricante) {
+		this.fabricante = fabricante;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	public TipoAeronaveDTO getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(TipoAeronaveDTO tipo) {
+		this.tipo = tipo;
+	}
+	
+	//metodos
+	
+	public void inserirAeronave(AeronaveDTO aeronave) {
+		
+	}
+
+}
