@@ -4,6 +4,10 @@ Projeto final do curso Java do SENAI-TAGUATINGA
 
 ###############################################
 
+Projeto criado com:
+- Eclipse/WindowBuilder
+- Mysql
+
 Neste projeto foi implementado um sistema de cadastro de aeronaves.
 Ao iniciar o aquivo chamado: Principal.java aparecerá uma tela de login.
 O usuário deverá digitar:
